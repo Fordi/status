@@ -19,7 +19,7 @@ const stateManager = new StateManager({ total: 10 })
 const status = new StatusManager({ stateManager });
 const renderer = new ConsoleLogger(ConsoleLogger.defaultFormatter);
 renderer.begin();
-status.attach(console logger);
+status.attach(renderer);
 
 var timer = setInterval(function () {
   status.tick();
